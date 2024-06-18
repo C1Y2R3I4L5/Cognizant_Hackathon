@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 152.519 s <<< FAILURE! - in TestSuite
+Runner.runnerClass.runScenario["Navigate to Upcoming Bikes and Display Honda Bikes", "91 Wheels"](1)  Time elapsed: 53.104 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "₹ 2.30"
+
+Runner.runnerClass.runScenario["Invalid LoginPage", "91 Wheels"](3)  Time elapsed: 35.445 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: -0.005
+  (Session info: chrome=118.0.5993.71)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5aee6f0ff8e0e7c9e9f5aa7ec705c920, get {url=https://www.91wheels.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\2318450\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56820}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56820/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5aee6f0ff8e0e7c9e9f5aa7ec705c920
+
+Runner.runnerClass.tearDownClass  Time elapsed: 57.056 s  <<< FAILURE!
+java.lang.IllegalStateException: java.net.ConnectException: Connection timed out: connect
+Caused by: java.net.ConnectException: Connection timed out: connect
+Caused by: java.net.ConnectException: Connection timed out: connect
+
