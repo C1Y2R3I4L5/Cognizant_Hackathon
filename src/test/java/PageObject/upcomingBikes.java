@@ -58,17 +58,17 @@ public class upcomingBikes {
 			if(finalPrice.contains("-")) {
 				String[] temp = new String[2];
 				temp = finalPrice.split(" - ");
-				String l = temp[1].replace("Lakh","");
-     			String s = l.replace("*","");
-				bikeprice[i] = s.replace("₹", "");
+				String l = temp[1].replaceAll("[^0-9.]","");
+//     			String s = l.replace("*","");
+				bikeprice[i] = l;
 				
 				
 			}
 			
 			else {
-				String l = finalPrice.replace("Lakh","");
-				String s = l.replace("*","");
-				bikeprice[i] = s.replace("₹", "");
+				String l = finalPrice.replaceAll("[^0-9.]","");
+				//String s = l.replace("*","");
+				bikeprice[i] = l;
 				
 			}
 		}
